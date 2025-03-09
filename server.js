@@ -1,10 +1,14 @@
 const express = require("express");
 const fs = require("fs");
+const path = require("path");
 
 const app = express();
-const PORT = 4000; // Puedes cambiar el puerto si es necesario
+const PORT = 4000;
 
-// Cargar productos desde un JSON
+// Servir archivos estáticos desde la carpeta "public"
+app.use(express.static(path.join(__dirname, "public")));
+
+// Ruta para cargar productos desde el JSON
 app.get("/productos", (req, res) => {
     fs.readFile("productos.json", "utf8", (err, data) => {
         if (err) {
@@ -14,13 +18,12 @@ app.get("/productos", (req, res) => {
     });
 });
 
+// Ruta principal
 app.get("/", (req, res) => {
-    res.send("Servidor funcionando correctamente");
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
-``
-
 
 // Iniciar el servidor
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
