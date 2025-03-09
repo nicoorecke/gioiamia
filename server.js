@@ -2,7 +2,7 @@ const express = require("express");
 const fs = require("fs");
 
 const app = express();
-const PORT = 5000; // Puedes cambiar el puerto si es necesario
+const PORT = 4000; // Puedes cambiar el puerto si es necesario
 
 // Cargar productos desde un JSON
 app.get("/productos", (req, res) => {
