@@ -5,10 +5,13 @@ const path = require("path");
 const app = express();
 const PORT = 4000;
 
+// Middleware para parsear JSON
+app.use(express.json());
+
 // Servir archivos estáticos desde la carpeta "public"
 app.use(express.static(path.join(__dirname, "public")));
 
-// Ruta para cargar productos desde el JSON
+// Ruta para obtener los productos
 app.get("/productos", (req, res) => {
     fs.readFile("productos.json", "utf8", (err, data) => {
         if (err) {
@@ -18,9 +21,38 @@ app.get("/productos", (req, res) => {
     });
 });
 
-// Ruta principal
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
+// Ruta para actualizar los precios
+app.post("/actualizar-precios", (req, res) => {
+    const nuevosPrecios = req.body;
+
+    fs.readFile("productos.json", "utf8", (err, data) => {
+        if (err) {
+            return res.status(500).json({ error: "Error al leer el archivo" });
+        }
+
+        const productos = JSON.parse(data);
+
+        // Actualizar los precios
+        nuevosPrecios.forEach(nuevoPrecio => {
+            const producto = productos.find(p => p.id === nuevoPrecio.id);
+            if (producto) {
+                producto.precio = nuevoPrecio.precio;
+            }
+        });
+
+        // Guardar los cambios en el archivo JSON
+        fs.writeFile("productos.json", JSON.stringify(productos, null, 2), err => {
+            if (err) {
+                return res.status(500).json({ error: "Error al guardar los cambios" });
+            }
+            res.json({ message: "Precios actualizados correctamente" });
+        });
+    });
+});
+
+// Ruta para la página de actualización
+app.get("/actualizador", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "actualizador.html"));
 });
 
 // Iniciar el servidor
