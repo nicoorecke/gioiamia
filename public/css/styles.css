@@ -2,15 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ba7fc7;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+}
+
+h1 {
+    font-family: "Source+Serif+4";
+    font-size: 40px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Quicksand";
+    margin: 0px;
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
+    justify-content: center;
 }
+
+
+
+
 
 #lista-productos {
     display: flex;
@@ -19,11 +36,64 @@ header {
     padding: 1rem;
 }
 
+.loguito {
+    display: flex;
+    align-items: center;     /* Centra verticalmente */
+    width: 100%;            /* Asegúrate de que el div ocupe todo el ancho disponible */
+    height: 100%;           /* Asegúrate de que el div ocupe toda la altura disponible */
+}
+
+.loguito img {
+    width: 100%;           /* Ancho de la imagen */
+    height: auto;           /* Mantiene la proporción de la imagen */
+}
+
 .producto {
-    background-color: white;
+    display: flex; 
+    align-items: center;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem;
-    width: 200px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto .contenido {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding-right: 1rem; /* Espacio entre el contenido y la imagen */
     text-align: center;
+    padding: 5px;
+}
+
+.producto img {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Altura de la imagen */
+    border-radius: 100px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    padding: 10px;
+    border: 3px solid #ddd;
+}
+
+.producto h3 {
+    font-size: 1.9rem;
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-family: Lobster;
+}
+
+.producto .descripcion {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.producto .precios {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.producto .precios span {
+    display: block;
+    margin: 0.5rem 0;
 }

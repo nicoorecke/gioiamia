@@ -36,7 +36,8 @@ app.post("/actualizar-precios", (req, res) => {
         nuevosPrecios.forEach(nuevoPrecio => {
             const producto = productos.find(p => p.id === nuevoPrecio.id);
             if (producto) {
-                producto.precio = nuevoPrecio.precio;
+                producto.precioGrande = nuevoPrecio.precioGrande;
+                producto.precioChico = nuevoPrecio.precioChico;
             }
         });
 

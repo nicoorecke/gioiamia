@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 divProducto.className = "producto";
                 divProducto.innerHTML = `
                     <span>${producto.nombre}</span>
-                    <input type="number" id="precio-${producto.id}" value="${producto.precio}">
+                    <label for="precio-${producto.id}-grande">Precio Grande:</label>
+                    <input type="number" id="precio-${producto.id}-grande" value="${producto.precioGrande}">
+                    <label for="precio-${producto.id}-chico">Precio Chico:</label>
+                    <input type="number" id="precio-${producto.id}-chico" value="${producto.precioChico}">
                 `;
                 listaProductos.appendChild(divProducto);
             });
@@ -22,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
     botonActualizar.addEventListener("click", () => {
         const nuevosPrecios = [];
         document.querySelectorAll(".producto").forEach(div => {
-            const input = div.querySelector("input");
-            const id = input.id.split("-")[1];
-            const precio = parseFloat(input.value);
-            nuevosPrecios.push({ id: parseInt(id), precio });
+            const id = div.querySelector("input").id.split("-")[1];
+            const precioGrande = parseFloat(div.querySelector(`#precio-${id}-grande`).value);
+            const precioChico = parseFloat(div.querySelector(`#precio-${id}-chico`).value);
+            nuevosPrecios.push({ id: parseInt(id), precioGrande, precioChico });
         });
 
         // Enviar la solicitud de actualización

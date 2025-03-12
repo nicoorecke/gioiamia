@@ -7,8 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 const divProducto = document.createElement("div");
                 divProducto.className = "producto";
                 divProducto.innerHTML = `
-                    <h3>${producto.nombre}</h3>
-                    <p>Precio: $${producto.precio}</p>
+                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                    <div class="contenido">
+                        
+                        <h3>${producto.nombre}</h3>
+                        
+                        <div class="descripcion">${producto.descripcion}</div>
+                        <div class="precios">
+                            <span>${producto.tamañoGrande}: $${producto.precioGrande}</span>
+                            <span>${producto.tamañoChico}: $${producto.precioChico}</span>
+                        </div>
+                    </div>
+                    
                 `;
                 listaProductos.appendChild(divProducto);
             });

@@ -1,17 +1,211 @@
 [
   {
     "id": 1,
-    "nombre": "Producto A",
-    "precio": 1008
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta Brownie",
+    "tamañoGrande": "26cm",
+    "precioGrande": 44444444444,
+    "tamañoChico": "20cm",
+    "precioChico": 15900
   },
   {
     "id": 2,
-    "nombre": "Producto B",
-    "precio": 1500
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Lemon Pie",
+    "tamañoGrande": "26cm",
+    "precioGrande": 19800,
+    "tamañoChico": "20cm",
+    "precioChico": 1390044444444
   },
   {
     "id": 3,
-    "nombre": "Producto C",
-    "precio": 2000
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Key Lime Pie",
+    "tamañoGrande": "26cm",
+    "precioGrande": 21500,
+    "tamañoChico": "20cm",
+    "precioChico": 16800
+  },
+  {
+    "id": 4,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Cheescake Frutos Rojos",
+    "tamañoGrande": "22cm",
+    "precioGrande": 27000,
+    "precioChico": null
+  },
+  {
+    "id": 5,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Crumble de Manzana",
+    "tamañoGrande": "26cm",
+    "precioGrande": 18200,
+    "tamañoChico": "20cm",
+    "precioChico": 12500
+  },
+  {
+    "id": 6,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta Balcarce",
+    "tamaño": "20cm",
+    "precioGrande": 27900,
+    "precioChico": null
+  },
+  {
+    "id": 7,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Chocotorta",
+    "tamaño": "22cm x 22cm",
+    "precioGrande": 25000,
+    "precioChico": null
+  },
+  {
+    "id": 8,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta de Ricota",
+    "tamañoGrande": "26cm",
+    "precioGrande": 15200,
+    "tamañoChico": "20cm",
+    "precioChico": 11200
+  },
+  {
+    "id": 9,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Rogel",
+    "tamaño": "20cm",
+    "precioGrande": 26700,
+    "precioChico": null
+  },
+  {
+    "id": 10,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta de Mousse de Chocolate",
+    "tamaño": "22cm",
+    "precioGrande": 26000,
+    "precioChico": null
+  },
+  {
+    "id": 11,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Tarta de Frutillas",
+    "tamañoGrande": "26cm",
+    "precioGrande": 19000,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 12,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Tarta de Durazno",
+    "tamañoGrande": "26cm",
+    "precioGrande": 19000,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 13,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Pastafrola",
+    "tamañoGrande": "26cm",
+    "precioGrande": 15200,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 14,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta Havanette",
+    "tamañoGrande": "26cm",
+    "precioGrande": 23500,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 16,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta Oreo",
+    "tamaño": "20cm",
+    "precioGrande": 32000,
+    "precioChico": null
+  },
+  {
+    "id": 17,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta Bomba de Chocolate",
+    "tamaño": "20cm x 25cm",
+    "precioGrande": 28000,
+    "precioChico": null
+  },
+  {
+    "id": 18,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Torta de Coco y Dulce de Leche",
+    "tamañoGrande": "26cm",
+    "precioGrande": 15200,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 19,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Lemonies",
+    "tamaño": "24 unidades",
+    "precioGrande": 9800,
+    "precioChico": null
+  },
+  {
+    "id": 20,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Alfajorcitos de maicena",
+    "tamaño": "12 unidades",
+    "precioGrande": 8900,
+    "precioChico": null
+  },
+  {
+    "id": 21,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Alfajorcitos de Chocolate",
+    "tamaño": "12 unidades",
+    "precioGrande": 15800,
+    "precioChico": null
+  },
+  {
+    "id": 22,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Brownies",
+    "tamaño": "24 unidades",
+    "precioGrande": 21000,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
+  },
+  {
+    "id": 22,
+    "imagen": "/assets/imagen.png",
+    "descripcion": "asadagfghstghdg",
+    "nombre": "Box para Regalar",
+    "precioGrande": 21000,
+    "tamañoChico": "20cm",
+    "precioChico": 24900
   }
 ]
