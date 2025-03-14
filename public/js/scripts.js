@@ -12,10 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         
                         <h3>${producto.nombre}</h3>
                         
-                        <div class="descripcion">${producto.descripcion}</div>
+                        <div class="descripcion">
+                            <p>${producto.descripcion}</p> </div>
                         <div class="precios">
-                            <span>${producto.tamañoGrande}: $${producto.precioGrande}</span>
-                            <span>${producto.tamañoChico}: $${producto.precioChico}</span>
+                            <div class="boton">
+                                <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
+                            </div>
+                            <div class="boton">
+                                <span>$${producto.precioChico} (${producto.tamañoChico})</span>
+                            </div>
                         </div>
                     </div>
                     

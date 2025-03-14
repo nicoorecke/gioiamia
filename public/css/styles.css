@@ -7,15 +7,46 @@ body {
     background-size: 40px 40px;
 }
 
+.boton {
+    border-radius: 40px;
+    padding: 1%;
+    margin: 3px;
+    color: #ddd;
+    background-color: orangered;
+}
+
+.boton span {
+    color: white;
+    font-family: Roboto+Flex;
+    font-size: medium;
+}
+
+.contenido h3 {
+    text-shadow: 2px 2px #333;
+}
+
+
+.descripcion p {
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+
 h1 {
     font-family: "Source+Serif+4";
     font-size: 40px;
     margin: 0px;
+    text-shadow: 2px 2px 5px #333;
+
 }
 
 h2 {
     font-family: "Quicksand";
     margin: 0px;
+    text-shadow: 2px 2px #333;
 }
 
 header {
@@ -25,15 +56,10 @@ header {
     justify-content: center;
 }
 
-
-
-
-
 #lista-productos {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
+    padding: 5px;
 }
 
 .loguito {
@@ -51,18 +77,17 @@ header {
 .producto {
     display: flex; 
     align-items: center;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    
 }
+
 
 .producto .contenido {
     flex: 1; /* Ocupa el espacio disponible */
     padding-right: 1rem; /* Espacio entre el contenido y la imagen */
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .producto img {
