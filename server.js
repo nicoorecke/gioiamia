@@ -60,6 +60,51 @@ app.get("/actualizador", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "actualizador.html"));
 });
 
+// Configurar rutas sin la extensión .html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  });
+  
+  app.get('/index', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  });
+  
+  app.get('/menu-pastas', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-pastas.html'));
+  });
+  
+  app.get('/menu-postres', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-postres.html'));
+  });
+  
+  app.get('/menu-box', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-box.html'));
+  });
+  
+  app.get('/menu-bandejas', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-bandejas.html'));
+  });
+  
+  app.get('/menu-desayunos', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-desayunos.html'));
+  });
+  
+  app.get('/menu-picadas', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-picadas.html'));
+  });
+  
+  app.get('/menu-congelados', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'menu-congelados.html'));
+  });
+  
+  app.get('/catering', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'catering.html'));
+  });
+  
+  app.get('/contacto', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'contacto.html'));
+  });
+
 // Iniciar el servidor
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
