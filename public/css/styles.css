@@ -12,7 +12,7 @@ body {
     padding: 1%;
     margin: 3px;
     color: #ddd;
-    background-color: orangered;
+    background-color: #f0581d;
 }
 
 .boton span {
@@ -52,9 +52,10 @@ h2 {
 
 header {
     color: white;
-    padding: 1rem;
+    
     text-align: center;
     justify-content: center;
+    margin: 0;
 }
 
 #lista-productos {
@@ -75,65 +76,69 @@ header {
     height: auto;           /* Mantiene la proporción de la imagen */
 }
 
-/* Estilos para la barra de navegación */
+/* Estilos generales de la barra de navegación */
 nav {
-    background-color: #222;
-    padding: 10px;
+    background-color:  #5e4064;
+    padding: 10px 0;
     text-align: center;
+    margin-top: 10px;
 }
 
-.menu {
+nav .menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.menu li {
-    display: inline-block;
+nav .menu li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 7px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.menu li a {
+nav .menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
     display: block;
+    font-family: Quicksand;
 }
 
-.menu li a:hover {
+nav .menu li a:hover {
     color: #ffcc00;
 }
 
-/* Estilos para el menú desplegable */
-.submenu {
-    position: relative;
-}
-
+/* Estilos del menú desplegable */
 .dropdown {
-    display: none;
+    display: none; /* Oculto por defecto */
     position: absolute;
-    background-color: #333;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    top: 100%;
+    top: 100%; /* Para que aparezca debajo del botón */
     left: 0;
-    width: 150px;
+    background-color: #333;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.dropdown li {
+    width: 100%;
+}
 
 .dropdown li a {
+    padding: 12px;
     color: white;
+    display: block;
+    text-align: left;
 }
 
 .dropdown li a:hover {
-    background-color: #ffcc00;
-    color: black;
+    background-color: #555;
 }
 
-/* Mostrar el desplegable al pasar el mouse */
+/* Mostrar el menú cuando el usuario pasa el mouse */
 .submenu:hover .dropdown {
     display: block;
 }
