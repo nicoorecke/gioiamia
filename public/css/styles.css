@@ -27,11 +27,12 @@ body {
 
 
 .descripcion p {
-    text-align: left;
+    text-align: justify;
     font-size: 15px;
     color: white;
     font-weight: bold;
     margin: 0;
+    text-transform: baseline;
 }
 
 

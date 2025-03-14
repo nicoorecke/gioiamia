@@ -30,26 +30,30 @@ app.post("/actualizar-precios", (req, res) => {
             return res.status(500).json({ error: "Error al leer el archivo" });
         }
 
-        const productos = JSON.parse(data);
+        let productos = JSON.parse(data);
 
         // Actualizar los precios
         nuevosPrecios.forEach(nuevoPrecio => {
-            const producto = productos.find(p => p.id === nuevoPrecio.id);
+            const producto = productos.find(p => p.id == nuevoPrecio.id); // Convertir id a string para evitar problemas
             if (producto) {
                 producto.precioGrande = nuevoPrecio.precioGrande;
-                producto.precioChico = nuevoPrecio.precioChico;
+                
+                if (nuevoPrecio.precioChico !== undefined) {
+                    producto.precioChico = nuevoPrecio.precioChico;
+                }
             }
         });
 
         // Guardar los cambios en el archivo JSON
-        fs.writeFile("productos.json", JSON.stringify(productos, null, 2), err => {
+        fs.writeFile("productos.json", JSON.stringify(productos, null, 4), "utf8", (err) => {
             if (err) {
                 return res.status(500).json({ error: "Error al guardar los cambios" });
             }
-            res.json({ message: "Precios actualizados correctamente" });
+            res.json({ mensaje: "Precios actualizados correctamente" });
         });
     });
 });
+
 
 // Ruta para la página de actualización
 app.get("/actualizador", (req, res) => {

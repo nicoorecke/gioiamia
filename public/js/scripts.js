@@ -6,25 +6,35 @@ document.addEventListener("DOMContentLoaded", () => {
             data.forEach(producto => {
                 const divProducto = document.createElement("div");
                 divProducto.className = "producto";
+                
+                // Construimos la sección de precios dinámicamente
+                let preciosHTML = `
+                    <div class="boton">
+                        <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
+                    </div>
+                `;
+
+                if (producto.precioChico !== undefined) {
+                    preciosHTML += `
+                        <div class="boton">
+                            <span>$${producto.precioChico} (${producto.tamañoChico})</span>
+                        </div>
+                    `;
+                }
+
                 divProducto.innerHTML = `
                     <img src="${producto.imagen}" alt="${producto.nombre}">
                     <div class="contenido">
-                        
                         <h3>${producto.nombre}</h3>
-                        
                         <div class="descripcion">
-                            <p>${producto.descripcion}</p> </div>
+                            <p>${producto.descripcion}</p>
+                        </div>
                         <div class="precios">
-                            <div class="boton">
-                                <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
-                            </div>
-                            <div class="boton">
-                                <span>$${producto.precioChico} (${producto.tamañoChico})</span>
-                            </div>
+                            ${preciosHTML}
                         </div>
                     </div>
-                    
                 `;
+
                 listaProductos.appendChild(divProducto);
             });
         })

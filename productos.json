@@ -1,211 +1,201 @@
 [
-  {
-    "id": 1,
-    "imagen": "/assets/torta_brownie.png",
-    "descripcion": "Base de brownie, abundante dulce de leche y merengue italiano flameado con lajitas de chocolate",
-    "nombre": "Torta Brownie",
-    "tamañoGrande": "26cm",
-    "precioGrande": 24900,
-    "tamañoChico": "20cm",
-    "precioChico": 15900
-  },
-  {
-    "id": 2,
-    "imagen": "/assets/lemon_pie.png",
-    "descripcion": "Base masa sable, relleno crema de limón y merengue italiano",
-    "nombre": "Lemon Pie",
-    "tamañoGrande": "26cm",
-    "precioGrande": 19800,
-    "tamañoChico": "20cm",
-    "precioChico": 13900
-  },
-  {
-    "id": 3,
-    "imagen": "/assets/key_lime_pie.png",
-    "descripcion": "Base de vainilla,cremoso de lima y crema chantilly",
-    "nombre": "Key Lime Pie",
-    "tamañoGrande": "26cm",
-    "precioGrande": 21500,
-    "tamañoChico": "20cm",
-    "precioChico": 16800
-  },
-  {
-    "id": 4,
-    "imagen": "/assets/cheesecake.png",
-    "descripcion": "Riquísima torta de queso, con base de vainilla, cubierta con una deliciosa preparacion de frutos rojos",
-    "nombre": "Cheescake Frutos Rojos",
-    "tamañoGrande": "22cm",
-    "precioGrande": 27000,
-    "precioChico": null
-  },
-  {
-    "id": 5,
-    "imagen": "/assets/crumble.png",
-    "descripcion": "Base sable, relleno manzanas verdes, cubierta con un crocante crumble saborizado con canela",
-    "nombre": "Crumble de Manzana",
-    "tamañoGrande": "26cm",
-    "precioGrande": 18200,
-    "tamañoChico": "20cm",
-    "precioChico": 12500
-  },
-  {
-    "id": 6,
-    "imagen": "/assets/balcarce.png",
-    "descripcion": "Deliciosa torta en capas de pionono de vainilla, crema chantilly, merengue, dulce de leche y nueces",
-    "nombre": "Torta Balcarce",
-    "tamaño": "20cm",
-    "precioGrande": 27900,
-    "precioChico": null
-  },
-  {
-    "id": 7,
-    "imagen": "/assets/choco.png",
-    "descripcion": "Capas de chocolinas, con delicioso relleno",
-    "nombre": "Chocotorta",
-    "tamaño": "22cm x 22cm",
-    "precioGrande": 25000,
-    "precioChico": null
-  },
-  {
-    "id": 8,
-    "imagen": "/assets/ricota.png",
-    "descripcion": "Torta de ricota suave y cremosa, con un toque de limón, sobre una base crujiente de galleta.",
-    "nombre": "Torta de Ricota",
-    "tamañoGrande": "26cm",
-    "precioGrande": 15200,
-    "tamañoChico": "20cm",
-    "precioChico": 11200
-  },
-  {
-    "id": 9,
-    "imagen": "/assets/rogel.png",
-    "descripcion": "Nueve capas de una crocante masa con abundante dulce de leche y merengue italiano por arriba",
-    "nombre": "Rogel",
-    "tamaño": "20cm",
-    "precioGrande": 26700,
-    "precioChico": null
-  },
-  {
-    "id": 10,
-    "imagen": "/assets/mousse.png",
-    "descripcion": "Base de brownie, mousse de chocolate y cubierta de crema chantilly, con lajitas de chocolate",
-    "nombre": "Torta de Mousse de Chocolate",
-    "tamaño": "22cm",
-    "precioGrande": 26000,
-    "precioChico": null
-  },
-  {
-    "id": 11,
-    "imagen": "/assets/frutilla.png",
-    "descripcion": "Masa sable, relleno de crema chantilly o pastelera con frutillas  y gelatina",
-    "nombre": "Tarta de Frutillas",
-    "tamañoGrande": "26cm",
-    "precioGrande": 19000,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 12,
-    "imagen": "/assets/durazno.png",
-    "descripcion": "Masa sable, relleno de crema chantilly o pastelera con durazno y gelatina",
-    "nombre": "Tarta de Durazno",
-    "tamañoGrande": "26cm",
-    "precioGrande": 19000,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 13,
-    "imagen": "/assets/pastafrola.png",
-    "descripcion": "Membrillo, batata o mitad y mitad",
-    "nombre": "Pastafrola",
-    "tamañoGrande": "26cm",
-    "precioGrande": 15200,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 14,
-    "imagen": "/assets/hava.png",
-    "descripcion": "Masa sable, relleno dulce de leche, cubierta de chocolate y decorada con dulce de leche",
-    "nombre": "Torta Havanette",
-    "tamañoGrande": "26cm",
-    "precioGrande": 23500,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 16,
-    "imagen": "/assets/oreo.png",
-    "descripcion": "Base de oreos, doble capa de  de dulce de leche cremoso, doble capa crema oreo mas oreos en el centro y arriba",
-    "nombre": "Torta Oreo",
-    "tamaño": "20cm",
-    "precioGrande": 32000,
-    "precioChico": null
-  },
-  {
-    "id": 17,
-    "imagen": "/assets/bomba.png",
-    "descripcion": "Capas de un rico y húmedo biscocho de chocolate, relleno de una intensa crema de choclate ",
-    "nombre": "Torta Bomba de Chocolate",
-    "tamaño": "20cm x 25cm",
-    "precioGrande": 28000,
-    "precioChico": null
-  },
-  {
-    "id": 18,
-    "imagen": "/assets/coco.png",
-    "descripcion": "Base sable, abundante relleno de dulce de leche y crocante de coco",
-    "nombre": "Torta de Coco y Dulce de Leche",
-    "tamañoGrande": "26cm",
-    "precioGrande": 15200,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 19,
-    "imagen": "/assets/imagen.png",
-    "descripcion": "Cuadraditos de limón glaseados, con una base suave y un refrescante sabor cítrico ",
-    "nombre": "Lemonies",
-    "tamaño": "24 unidades",
-    "precioGrande": 9800,
-    "precioChico": null
-  },
-  {
-    "id": 20,
-    "imagen": "/assets/maicena.png",
-    "descripcion": "Masa súper suave rellena con abundante dulce de leche",
-    "nombre": "Alfajorcitos de maicena",
-    "tamaño": "12 unidades",
-    "precioGrande": 8900,
-    "precioChico": null
-  },
-  {
-    "id": 21,
-    "imagen": "/assets/alf_choco.png",
-    "descripcion": "Increíbles alfajorcitos artesanales tipo marplatense",
-    "nombre": "Alfajorcitos de Chocolate",
-    "tamaño": "12 unidades",
-    "precioGrande": 15800,
-    "precioChico": null
-  },
-  {
-    "id": 22,
-    "imagen": "/assets/brownies.png",
-    "descripcion": "24 unidades de un exquisito y esponjoso brownie",
-    "nombre": "Brownies",
-    "tamaño": "24 unidades",
-    "precioGrande": 21000,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  },
-  {
-    "id": 22,
-    "imagen": "/assets/box_reg.png",
-    "descripcion": "asadagfghstghdg",
-    "nombre": "Box para Regalar",
-    "precioGrande": 21000,
-    "tamañoChico": "20cm",
-    "precioChico": 24900
-  }
+    {
+        "id": 1,
+        "imagen": "/assets/torta_brownie.png",
+        "descripcion": "Base de brownie, abundante dulce de leche y merengue italiano flameado con lajitas de chocolate",
+        "nombre": "Torta Brownie",
+        "tamañoGrande": "26cm",
+        "precioGrande": 24900,
+        "tamañoChico": "20cm",
+        "precioChico": 15900
+    },
+    {
+        "id": 2,
+        "imagen": "/assets/lemon_pie.png",
+        "descripcion": "Base masa sable, relleno crema de limón y merengue italiano",
+        "nombre": "Lemon Pie",
+        "tamañoGrande": "26cm",
+        "precioGrande": 19800,
+        "tamañoChico": "20cm",
+        "precioChico": 13900
+    },
+    {
+        "id": 3,
+        "imagen": "/assets/key_lime_pie.png",
+        "descripcion": "Base de vainilla,cremoso de lima y crema chantilly",
+        "nombre": "Key Lime Pie",
+        "tamañoGrande": "26cm",
+        "precioGrande": 21500,
+        "tamañoChico": "20cm",
+        "precioChico": 16800
+    },
+    {
+        "id": 4,
+        "imagen": "/assets/cheesecake.png",
+        "descripcion": "Riquísima torta de queso, con base de vainilla, cubierta con una deliciosa preparacion de frutos rojos",
+        "nombre": "Cheescake Frutos Rojos",
+        "tamañoGrande": "22cm",
+        "precioGrande": 27000
+    },
+    {
+        "id": 5,
+        "imagen": "/assets/crumble.png",
+        "descripcion": "Base sable, relleno manzanas verdes, cubierta con un crocante crumble saborizado con canela",
+        "nombre": "Crumble de Manzana",
+        "tamañoGrande": "26cm",
+        "precioGrande": 18200,
+        "tamañoChico": "20cm",
+        "precioChico": 12500
+    },
+    {
+        "id": 6,
+        "imagen": "/assets/balcarce.png",
+        "descripcion": "Deliciosa torta en capas de pionono de vainilla, crema chantilly, merengue, dulce de leche y nueces",
+        "nombre": "Torta Balcarce",
+        "tamañoGrande": "20cm",
+        "precioGrande": 27900
+    },
+    {
+        "id": 7,
+        "imagen": "/assets/choco.png",
+        "descripcion": "Capas de chocolinas, con delicioso relleno",
+        "nombre": "Chocotorta",
+        "tamaño": "22cm x 22cm",
+        "precioGrande": 25000
+    },
+    {
+        "id": 8,
+        "imagen": "/assets/ricota.png",
+        "descripcion": "Torta de ricota suave y cremosa, con un toque de limón, sobre una base crujiente de galleta.",
+        "nombre": "Torta de Ricota",
+        "tamañoGrande": "26cm",
+        "precioGrande": 15200,
+        "tamañoChico": "20cm",
+        "precioChico": 11200
+    },
+    {
+        "id": 9,
+        "imagen": "/assets/rogel.png",
+        "descripcion": "Nueve capas de una crocante masa con abundante dulce de leche y merengue italiano por arriba",
+        "nombre": "Rogel",
+        "tamaño": "20cm",
+        "precioGrande": 26700
+    },
+    {
+        "id": 10,
+        "imagen": "/assets/mousse.png",
+        "descripcion": "Base de brownie, mousse de chocolate y cubierta de crema chantilly, con lajitas de chocolate",
+        "nombre": "Torta de Mousse de Chocolate",
+        "tamaño": "22cm",
+        "precioGrande": 26000
+    },
+    {
+        "id": 11,
+        "imagen": "/assets/frutilla.png",
+        "descripcion": "Masa sable, relleno de crema chantilly o pastelera con frutillas  y gelatina",
+        "nombre": "Tarta de Frutillas",
+        "tamañoGrande": "26cm",
+        "precioGrande": 19000,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 12,
+        "imagen": "/assets/durazno.png",
+        "descripcion": "Masa sable, relleno de crema chantilly o pastelera con durazno y gelatina",
+        "nombre": "Tarta de Durazno",
+        "tamañoGrande": "26cm",
+        "precioGrande": 19000,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 13,
+        "imagen": "/assets/pastafrola.png",
+        "descripcion": "Membrillo, batata o mitad y mitad",
+        "nombre": "Pastafrola",
+        "tamañoGrande": "26cm",
+        "precioGrande": 15200,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 14,
+        "imagen": "/assets/hava.png",
+        "descripcion": "Masa sable, relleno dulce de leche, cubierta de chocolate y decorada con dulce de leche",
+        "nombre": "Torta Havanette",
+        "tamañoGrande": "26cm",
+        "precioGrande": 23500,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 16,
+        "imagen": "/assets/oreo.png",
+        "descripcion": "Base de oreos, doble capa de  de dulce de leche cremoso, doble capa crema oreo mas oreos en el centro y arriba",
+        "nombre": "Torta Oreo",
+        "tamaño": "20cm",
+        "precioGrande": 32000
+    },
+    {
+        "id": 17,
+        "imagen": "/assets/bomba.png",
+        "descripcion": "Capas de un rico y húmedo biscocho de chocolate, relleno de una intensa crema de choclate ",
+        "nombre": "Torta Bomba de Chocolate",
+        "tamaño": "20cm x 25cm",
+        "precioGrande": 28000
+    },
+    {
+        "id": 18,
+        "imagen": "/assets/coco.png",
+        "descripcion": "Base sable, abundante relleno de dulce de leche y crocante de coco",
+        "nombre": "Torta de Coco y Dulce de Leche",
+        "tamañoGrande": "26cm",
+        "precioGrande": 15200,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 19,
+        "imagen": "/assets/lemon.png",
+        "descripcion": "Cuadraditos de limón glaseados, con una base suave y un refrescante sabor cítrico ",
+        "nombre": "Lemonies",
+        "tamaño": "24 unidades",
+        "precioGrande": 9800
+    },
+    {
+        "id": 20,
+        "imagen": "/assets/maicena.png",
+        "descripcion": "Masa súper suave rellena con abundante dulce de leche",
+        "nombre": "Alfajorcitos de maicena",
+        "tamaño": "12 unidades",
+        "precioGrande": 8900
+    },
+    {
+        "id": 21,
+        "imagen": "/assets/alf_choco.png",
+        "descripcion": "Increíbles alfajorcitos artesanales tipo marplatense",
+        "nombre": "Alfajorcitos de Chocolate",
+        "tamaño": "12 unidades",
+        "precioGrande": 15800
+    },
+    {
+        "id": 22,
+        "imagen": "/assets/brownies.png",
+        "descripcion": "24 unidades de un exquisito y esponjoso brownie",
+        "nombre": "Brownies",
+        "tamaño": "24 unidades",
+        "precioGrande": 21000,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    },
+    {
+        "id": 22,
+        "imagen": "/assets/box_reg.png",
+        "descripcion": "asadagfghstghdg",
+        "nombre": "Box para Regalar",
+        "precioGrande": 21000,
+        "tamañoChico": "20cm",
+        "precioChico": 24900
+    }
 ]
