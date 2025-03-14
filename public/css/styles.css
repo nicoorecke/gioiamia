@@ -75,33 +75,67 @@ header {
     height: auto;           /* Mantiene la proporción de la imagen */
 }
 
+/* Estilos para la barra de navegación */
 nav {
-    background-color: orangered;
+    background-color: #222;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
-    margin-top: 10px;
 }
 
-nav ul {
+.menu {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.menu li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
 }
 
-nav ul li a {
+.menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    display: block;
 }
 
-nav ul li a:hover {
+.menu li a:hover {
     color: #ffcc00;
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 150px;
+}
+
+
+.dropdown li a {
+    color: white;
+}
+
+.dropdown li a:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Mostrar el desplegable al pasar el mouse */
+.submenu:hover .dropdown {
+    display: block;
 }
 
 
