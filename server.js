@@ -21,6 +21,16 @@ app.get("/productos", (req, res) => {
     });
 });
 
+// Ruta para obtener los productos
+app.get("/menus", (req, res) => {
+  fs.readFile("menus.json", "utf8", (err, data) => {
+      if (err) {
+          return res.status(500).json({ error: "Error al leer el archivo" });
+      }
+      res.json(JSON.parse(data));
+  });
+});
+
 // Ruta para actualizar los precios
 app.post("/actualizar-precios", (req, res) => {
     const nuevosPrecios = req.body;
@@ -69,9 +79,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   });
   
-  app.get('/menu-pastas', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'menu-pastas.html'));
-  });
   
   app.get('/menu-postres', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'menu-postres.html'));

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imagen": "/assets/torta_brownie.png",
+        "nombre": "Tortas y Postres",
+        "link": "menu-postres"
+    },
+    {
+        "id": 2,
+        "imagen": "/assets/box_reg.png",
+        "nombre": "Box Regalo",
+        "link": "menu-box"
+    },
+    {
+        "id": 3,
+        "imagen": "/assets/key_lime_pie.png",
+        "nombre": "Bandejitas",
+        "link": "menu-bandejas"
+    },
+    {
+        "id": 4,
+        "imagen": "/assets/desa_1.png",
+        "nombre": "Desayunos",
+        "link": "menu-desayunos"
+    },
+    {
+        "id": 5,
+        "imagen": "/assets/pica_2.png",
+        "nombre": "Picadas",
+        "link": "menu-picadas"
+    },
+    {
+        "id": 6,
+        "imagen": "/assets/conge_2.png",
+        "nombre": "Congelados",
+        "link": "menu-congelados"
+    }
+]
