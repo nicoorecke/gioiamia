@@ -21,6 +21,36 @@ body {
     font-size: medium;
 }
 
+.catering-desc {
+    color: white;
+    font-family:Arial, sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.catering-precioo {
+    text-align: center; /* Centra el texto horizontalmente */
+ 
+}
+.catering-precio {
+    background-color: #f0581d; /* Color de fondo */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno (ajusta según necesites) */
+    display: inline-block; /* Para que el contenedor no ocupe todo el ancho */
+    margin: 0 auto; /* Centra el contenedor si está dentro de un bloque */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.catering-precio p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+    color: white; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold;
+}
 
 
 .contenido h3 {
@@ -81,6 +111,7 @@ h2 {
     font-family: "Quicksand";
     margin: 0px;
     text-shadow: 2px 2px #333;
+    color: white;
 }
 
 header {
@@ -96,6 +127,8 @@ header {
     flex-wrap: wrap;
     padding: 5px;
 }
+
+
 
 .loguito {
     display: block;
@@ -179,12 +212,6 @@ nav .menu li a {
 
 nav .menu li a:hover {
     color: #ffcc00;
-}
-
-
-/* Mostrar el menú cuando el usuario pasa el mouse */
-.submenu:hover .dropdown {
-    display: block;
 }
 
 
