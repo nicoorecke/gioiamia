@@ -98,14 +98,14 @@ header {
 }
 
 .loguito {
-    display: flex;
+    display: block;
     align-items: center;     /* Centra verticalmente */
     width: 100%;            /* Asegúrate de que el div ocupe todo el ancho disponible */
-    height: 100%;           /* Asegúrate de que el div ocupe toda la altura disponible */
+    height: 150px;           /* Asegúrate de que el div ocupe toda la altura disponible */
 }
 
 .loguito img {
-    width: 100%;           /* Ancho de la imagen */
+    width: 50%;           /* Ancho de la imagen */
     height: auto;           /* Mantiene la proporción de la imagen */
 }
 

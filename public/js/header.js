@@ -5,7 +5,6 @@ class HeaderComponent extends HTMLElement {
           <div class="loguito">
             <img src="/assets/Logo.png" alt="Logo de Gioia Mia">
           </div>
-          <h1>GIOIA MIA</h1>
           <h2>Catering y Eventos</h2>
           <nav>
             <ul class="menu">
