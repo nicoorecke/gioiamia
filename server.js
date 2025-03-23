@@ -12,13 +12,23 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 // Ruta para obtener los productos
-app.get("/productos", (req, res) => {
-    fs.readFile("productos.json", "utf8", (err, data) => {
+app.get("/productos-postres", (req, res) => {
+    fs.readFile("productos-postres.json", "utf8", (err, data) => {
         if (err) {
             return res.status(500).json({ error: "Error al leer el archivo" });
         }
         res.json(JSON.parse(data));
     });
+});
+
+// Ruta para obtener los productos
+app.get("/productos-congelados", (req, res) => {
+  fs.readFile("productos-congelados.json", "utf8", (err, data) => {
+      if (err) {
+          return res.status(500).json({ error: "Error al leer el archivo" });
+      }
+      res.json(JSON.parse(data));
+  });
 });
 
 // Ruta para obtener los productos

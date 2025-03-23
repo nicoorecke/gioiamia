@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/productos")
+    fetch("/productos-postres")
         .then(response => response.json())
         .then(data => {
             const listaProductos = document.getElementById("lista-productos");
