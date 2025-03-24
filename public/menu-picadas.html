@@ -10,14 +10,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex" rel="stylesheet">
+        <style>
+            li {
+                color: white;
+                text-align: center;
+                list-style-type: none;
+                font-size: small;
+            }
+            .producto {
+                width: 100%;
+                text-align: center;
+            }
+            .precios {
+                text-align: center;
+            }
+            .boton {
+                width: 50%;
+                margin: 0 auto; /* Centra el botón */
+                text-align: center; /* Centra el texto dentro del botón */
+            }
+
+            .producto img {
+                margin-bottom: 5%;
+                width: 300px; /* Ancho de la imagen */
+                height: 300px; /* Altura de la imagen */
+                border-radius: 50%; /* Bordes redondeados */
+                object-fit: cover; /* Ajusta la imagen sin distorsionar */
+                padding: 10px;
+                border: 3px solid #ddd;
+            }
+        </style>
     </head>
     <body>
         <header-component></header-component>   
-
-        <main>
-            <p class="catering-desc">Picadas</p>
-        </main>
-        <script src="/js/menus.js"></script>
+        <h2 class="titulo">Picadas</h2>
+        <section id="productos">
+            <div id="lista-productos"></div>
+        </section>
+        <script src="/js/productos/productos-picadas.js"></script>
         <script src="/js/header.js"></script> 
     </body>
 </html>

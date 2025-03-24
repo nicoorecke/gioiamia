@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/productos-postres")
+    fetch("/productos-box")
         .then(response => response.json())
         .then(data => {
-            const listaProductos = document.getElementById("lista-productos");
+            const listaProductos = document.getElementById("precio-box");
             data.forEach(producto => {
                 const divProducto = document.createElement("div");
                 divProducto.className = "producto";
@@ -10,25 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Construimos la sección de precios dinámicamente
                 let preciosHTML = `
                     <div class="boton">
-                        <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
+                        <span>$${producto.precioGrande}</span>
                     </div>
                 `;
 
-                if (producto.precioChico !== undefined) {
-                    preciosHTML += `
-                        <div class="boton">
-                            <span>$${producto.precioChico} (${producto.tamañoChico})</span>
-                        </div>
-                    `;
-                }
-
                 divProducto.innerHTML = `
-                    <img src="${producto.imagen}" alt="${producto.nombre}">
-                    <div class="contenido">
-                        <h3>${producto.nombre}</h3>
-                        <div class="descripcion">
-                            <p>${producto.descripcion}</p>
-                        </div>
+                    <div class="precio-box">
                         <div class="precios">
                             ${preciosHTML}
                         </div>

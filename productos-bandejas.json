@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "imagen": "/assets/desa_1.png",
+        "descripcion": "<li>6 brownies<li>6 lemonies<li>6 alfajorcitos de maicena",
+        "nombre": "Opción 1",
+        "precioGrande": 11500
+    },
+    {
+        "id": 2,
+        "imagen": "/assets/desa_2.png",
+        "descripcion": "<li>6 brownies<li>6 lemonies<li>6 pastafrola",
+        "nombre": "Opción 2",
+        "precioGrande": 11500
+    },
+    {
+        "id": 3,
+        "imagen": "/assets/desa_3.png",
+        "descripcion": "<li>6 brownies<li>6 lemonies<li>6 alfajorcitos de chocolate",
+        "nombre": "Opción 3",
+        "precioGrande": 14700
+    },
+    {
+        "id": 4,
+        "imagen": "/assets/desa_4.png",
+        "descripcion": "<li>6 brownies<li>6 alfajorcitos de maicena<li>6 alfajorcitos de chocolate",
+        "nombre": "Opción 4",
+        "precioGrande": 15900
+    }
+]

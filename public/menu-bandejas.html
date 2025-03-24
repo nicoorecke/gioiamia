@@ -10,14 +10,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex" rel="stylesheet">
+        <style>
+            li {
+                color: white;
+                text-align: left;
+                padding-left: 20%;
+                list-style-type: none;
+
+            }
+
+            h3 {
+                text-shadow: 2px 2px #333;
+            }
+
+            .producto {
+                width: 50%;
+                text-align: center;
+            }
+
+            .contenido-bandejas {
+                text-align: center;
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
         <header-component></header-component>
-
+        <h2 class="titulo">Bandejitas</h2>
         <main>
-            <p class="catering-desc">Bandejas</p>
+            <section id="productos">
+                <div id="lista-productos"></div>
+            </section>
         </main>
-        <script src="/js/menus.js"></script>
+        <script src="/js/productos/productos-bandejas.js"></script>
         <script src="/js/header.js"></script> 
     </body>
 </html>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("/productos-postres")
+    fetch("/productos-bandejas")
         .then(response => response.json())
         .then(data => {
             const listaProductos = document.getElementById("lista-productos");
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Construimos la sección de precios dinámicamente
                 let preciosHTML = `
                     <div class="boton">
-                        <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
+                        <span>$${producto.precioGrande}</span>
                     </div>
                 `;
 
@@ -23,8 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 divProducto.innerHTML = `
-                    <img src="${producto.imagen}" alt="${producto.nombre}">
-                    <div class="contenido">
+                    <div class="contenido-bandejas">
                         <h3>${producto.nombre}</h3>
                         <div class="descripcion">
                             <p>${producto.descripcion}</p>

@@ -52,6 +52,12 @@ body {
     font-weight: bold;
 }
 
+.titulo {
+    text-align: center;
+    font-family: "Lobster";
+    font-size: xx-large;
+    padding-top: 10px;
+}
 
 .contenido h3 {
     text-shadow: 2px 2px #333;
