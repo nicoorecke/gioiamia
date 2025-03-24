@@ -32,6 +32,16 @@ app.get("/productos-congelados", (req, res) => {
 });
 
 // Ruta para obtener los productos
+app.get("/productos-desayunos", (req, res) => {
+  fs.readFile("productos-desayunos.json", "utf8", (err, data) => {
+      if (err) {
+          return res.status(500).json({ error: "Error al leer el archivo" });
+      }
+      res.json(JSON.parse(data));
+  });
+});
+
+// Ruta para obtener los productos
 app.get("/menus", (req, res) => {
   fs.readFile("menus.json", "utf8", (err, data) => {
       if (err) {
@@ -41,44 +51,55 @@ app.get("/menus", (req, res) => {
   });
 });
 
-// Ruta para actualizar los precios
-app.post("/actualizar-precios", (req, res) => {
-    const nuevosPrecios = req.body;
+// Rutas para obtener los productos
+const tiposProductos = ["postres", "congelados", "desayunos", "box", "bandejas", "picadas"];
 
-    fs.readFile("productos.json", "utf8", (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: "Error al leer el archivo" });
-        }
-
-        let productos = JSON.parse(data);
-
-        // Actualizar los precios
-        nuevosPrecios.forEach(nuevoPrecio => {
-            const producto = productos.find(p => p.id == nuevoPrecio.id); // Convertir id a string para evitar problemas
-            if (producto) {
-                producto.precioGrande = nuevoPrecio.precioGrande;
-                
-                if (nuevoPrecio.precioChico !== undefined) {
-                    producto.precioChico = nuevoPrecio.precioChico;
-                }
-            }
-        });
-
-        // Guardar los cambios en el archivo JSON
-        fs.writeFile("productos.json", JSON.stringify(productos, null, 4), "utf8", (err) => {
+tiposProductos.forEach(tipo => {
+    app.get(`/productos-${tipo}`, (req, res) => {
+        fs.readFile(`productos-${tipo}.json`, "utf8", (err, data) => {
             if (err) {
-                return res.status(500).json({ error: "Error al guardar los cambios" });
+                return res.status(500).json({ error: "Error al leer el archivo" });
             }
-            res.json({ mensaje: "Precios actualizados correctamente" });
+            res.json(JSON.parse(data));
+        });
+    });
+
+    app.post(`/actualizar-precios-${tipo}`, (req, res) => {
+        const nuevosPrecios = req.body;
+
+        fs.readFile(`productos-${tipo}.json`, "utf8", (err, data) => {
+            if (err) {
+                return res.status(500).json({ error: "Error al leer el archivo" });
+            }
+
+            let productos = JSON.parse(data);
+
+            nuevosPrecios.forEach(nuevoPrecio => {
+                const producto = productos.find(p => p.id == nuevoPrecio.id);
+                if (producto) {
+                    producto.precioGrande = nuevoPrecio.precioGrande;
+                    if (nuevoPrecio.precioChico !== undefined) {
+                        producto.precioChico = nuevoPrecio.precioChico;
+                    }
+                }
+            });
+
+            fs.writeFile(`productos-${tipo}.json`, JSON.stringify(productos, null, 4), "utf8", (err) => {
+                if (err) {
+                    return res.status(500).json({ error: "Error al guardar los cambios" });
+                }
+                res.json({ mensaje: "Precios actualizados correctamente" });
+            });
         });
     });
 });
-
 
 // Ruta para la página de actualización
 app.get("/actualizador", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "actualizador.html"));
 });
+
+
 
 // Configurar rutas sin la extensión .html
 app.get('/', (req, res) => {

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Construimos la sección de precios dinámicamente
                 let preciosHTML = `
                     <div class="boton">
-                        <span>$${producto.precioGrande} (${producto.tamañoGrande})</span>
+                        <span>$${producto.precioGrande}</span>
                     </div>
                 `;
 

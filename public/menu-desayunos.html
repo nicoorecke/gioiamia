@@ -10,20 +10,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Carattere" rel="stylesheet">
+        <style>
+            li {
+                color: white;
+                text-align: left;
+            }
+            h3 {
+                color: white;
+                text-align: center;
+                padding-right: 10%;font-family: "Carattere";
+                font-size: xx-large;
+                text-shadow: 2px 2px #333;
+                margin-bottom: 2px;
+            }
+
+            h4 {
+                margin-top: 0.5%;
+                font-weight: 300;
+                text-align: center;
+                margin: 0;
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <header-component></header-component>   
 
         <main>
-            <p class="catering-desc">¡No dudes en consultar el menú para tu evento
-                Armado según las necesidades de cada ocasión!</p>
-            <div class="catering-precioo">
-                <div class="catering-precio">
-                    <p>Desde $11.000 x Persona</p>
-                </div>
-            </div>
+            <h3>Todo desayuno incluye:</h3>
+            <h4><br>Taza de regalo
+                <br>Cucharita y servilleta
+                <br>Café sobre
+                <br>Té negro
+                <br>Té saborizado
+                <br>Azúcar y edulcorante
+                <br>Leche chocolatada
+                <br>Jugo
+                <br>Box con visor
+                <br>Moño
+                <br>Tarjeta</h4>
+            <section id="productos">
+                <div id="lista-productos"></div>
+            </section>
         </main>
-        <script src="/js/menus.js"></script>
+        <script src="/js/productos/productos-desayunos.js"></script>
         <script src="/js/header.js"></script> 
     </body>
 </html>
