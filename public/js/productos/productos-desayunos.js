@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Construimos la sección de precios dinámicamente
                 let preciosHTML = `
                     <div class="boton">
-                        <span>$${producto.precioGrande}</span>
+                        <span>$${producto.precioGrande.toLocaleString('es-ES')}</span>
                     </div>
                 `;
 
                 if (producto.precioChico !== undefined) {
                     preciosHTML += `
                         <div class="boton">
-                            <span>$${producto.precioChico} (${producto.tamañoChico})</span>
+                            <span>$${producto.precioChico.toLocaleString('es-ES')} (${producto.tamañoChico})</span>
                         </div>
                     `;
                 }
