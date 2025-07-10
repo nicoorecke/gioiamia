@@ -4,34 +4,34 @@
         "imagen": "/assets/desa_1.png",
         "descripcion": "<li>1 torta individual decorada o a elección<li>2 alfajorcitos de maicena<li>2 brownies<li>2 cupcakes<li>2 lemonies",
         "nombre": "Opción 1",
-        "precioGrande": 19900
+        "precioGrande": 21900
     },
     {
         "id": 2,
         "imagen": "/assets/desa_2.png",
         "descripcion": "<li>3 alfajorcitos de maicena<li>3 cuadraditos de brownie<li>3 cuadraditos de limón<li>3 cupcakes<li>3 chipá",
         "nombre": "Opción 2",
-        "precioGrande": 19900
+        "precioGrande": 21900
     },
     {
         "id": 3,
         "imagen": "/assets/desa_3.png",
         "descripcion": "<li>1 torta individual decorada o a elección<li>3 alfajorcitos de maicena<li>3 brownies<li>3 lemonies<li>3 scones<li>3 cupcakes",
         "nombre": "Opción 3",
-        "precioGrande": 22000
+        "precioGrande": 24000
     },
     {
         "id": 4,
         "imagen": "/assets/desa_4.png",
         "descripcion": "<li>3 alfajorcitos de maicena<li>3 brownies<li>3 lemonies<li>3 cuadraditos de coco y dulce de leche<li>3 cupcakes rellenos<li>3 chipá<li>3 scones<li>3 pancitos con semillas<li>3 chips de jamón y queso",
         "nombre": "Opción 4",
-        "precioGrande": 24000
+        "precioGrande": 26000
     },
     {
         "id": 5,
         "imagen": "/assets/desa_5.png",
         "descripcion": "<li>3 alfajorcitos de maicena<li>3 brownies<li>3 lemonies<li>3 cupcakes rellenos<li>3 sándwiches de crudo y queso<li>3 chipá<li>3 scones<li>3 pancitos con semillas<li>3 chips de jamón y queso",
         "nombre": "Opción 5",
-        "precioGrande": 26000
+        "precioGrande": 28000
     }
 ]

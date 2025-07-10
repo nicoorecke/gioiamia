@@ -5,7 +5,7 @@
         "descripcion": "<li>Verdura y ricota<li>Verdura y calabaza<li>Puerro<li>Zapallito<li>Brócoli<li>Jamón y queso",
         "nombre": "Tartas",
         "tamañoGrande": "26cm",
-        "precioGrande": 9800
+        "precioGrande": 11500
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "descripcion": "<li>Arroz yamaní con lentejas<li>Trigo burgol con calabaza<li>Porotos aduki con quinoa y mijo<li>Lentejas canadienses con trigo burgol<li>Garbanzos con espinaca<li>Arroz yamaní con remolacha",
         "nombre": "Medallones  veganos",
         "tamañoGrande": "4 un",
-        "precioGrande": 5300
+        "precioGrande": 6800
     },
     {
         "id": 3,
@@ -21,6 +21,6 @@
         "descripcion": "<li>Carne<li>Pollo<li>jamon y queso<li>Verdura y ricota<li>Queso y cebolla<li>Capresse<li>Humita",
         "nombre": "Empanadas",
         "tamañoGrande": "12 un",
-        "precioGrande": 10800
+        "precioGrande": 12500
     }
 ]

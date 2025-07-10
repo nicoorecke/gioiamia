@@ -4,20 +4,20 @@
         "imagen": "/assets/pica_1.png",
         "descripcion": "<li>Pancitos saborizados<li>Chipá<li>Papas fritas<li>Palitos<li>Maní<li>Jamón crudo<li>Jamón cocido<li>Salame<li>Longaniza<li>Mortadela<li>Queso danbo<li>Queso pategrás<li>Queso sardo<li>Cerveza Corona",
         "nombre": "Para Regalar",
-        "precioGrande": 25000
+        "precioGrande": 28000
     },
     {
         "id": 2,
         "imagen": "/assets/pica_2.png",
         "descripcion": "<li>Queso Mar del Plata<li>Queso sardo<li>Longaniza<li>Salame<li>Mortadela<li>Queso danbo<li>Jamón cocido<li>Jamón crudo<li>Lomito<li>Queso azul<li>Pancitos saborizados<li>Dip para untar<li>Aceitunas",
         "nombre": "Para compartir: comen 2, pican 4",
-        "precioGrande": 20000
+        "precioGrande": 23000
     },
     {
         "id": 3,
         "imagen": "/assets/pica_3.png",
         "descripcion": "<li>Berenjenas en escabeche<li>Ajíes asados<li>Aceitunas<li>Coliflor caramelizado<li>Tomates cherry<li>Porotos condimentados<li>Hummus<li>Dip de zanahoria<li>Bollitos de lentejas<li>Maní<li>Tostaditas de focaccia<li>Pancitos<li>Queso danbo<li>Queso sardo (veget)<li>Queso Holanda (veget)<li>Papas fritas (veget)<li>Palitos salados (veget)",
         "nombre": "Vegetariana: comen 2: pican 4",
-        "precioGrande": 22000
+        "precioGrande": 24000
     }
 ]
