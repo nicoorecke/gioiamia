@@ -225,6 +225,7 @@ nav .menu li a:hover {
     align-items: center;
     border-radius: 10px;
     padding: 0;
+    width: 100%;
     
 }
 
@@ -286,4 +287,12 @@ nav .menu li a:hover {
 .wpp button {
     border-radius: 10%;
     height: 100%;
+}
+
+/* Para pantallas con un ancho máximo de 600px */
+@media screen and (min-width: 700px) {
+    /* Reglas CSS para pantallas pequeñas */
+    .producto {
+        width: 50%;
+    }
 }
